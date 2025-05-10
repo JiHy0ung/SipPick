@@ -1,0 +1,366 @@
+@font-face {
+  font-family: "DOSPilgiMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSPilgiMedium.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DepartureMono-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2409-1@1.0/DepartureMono-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1d1c1b;
+  font-family: "DepartureMono-Regular";
+}
+
+.title-link {
+  text-decoration: none;
+}
+
+.title {
+  font-family: "DOSPilgiMedium";
+  font-size: 70px;
+  line-height: 65px;
+  text-align: center;
+  color: wheat;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+  text-shadow: 3px 3px 0 rgb(188, 155, 143);
+}
+
+.title span {
+  color: crimson;
+  text-shadow: 3px 3px 0 #f0ede9;
+}
+
+.search-area {
+  padding: 0;
+  display: flex;
+  max-width: 700px;
+  gap: 1rem;
+  justify-content: right;
+  margin-bottom: 1.5rem;
+}
+
+.search-area input {
+  outline: none;
+  border: none;
+  border-radius: 0;
+  background-color: rgb(29, 28, 27);
+  border-bottom: 1px dashed #fafdff;
+  color: #f0ede9;
+  width: 200px;
+}
+
+.search-area input::placeholder {
+  letter-spacing: -1.5px;
+}
+
+.search-area button {
+  padding-inline: 0.5rem;
+  border: 3px grey;
+  background-color: #fffcfa;
+  transition: 0.3s;
+}
+
+.search-area button:hover {
+  color: #fafdff;
+  background-color: crimson;
+  transform: scale(0.92);
+}
+
+.cocktail-con {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  border: 10px double rgb(220, 220, 220);
+  border-style: ridge;
+  padding: 1rem;
+  gap: 2rem;
+  background-color: #f0ede9;
+}
+
+.recommend-cocktail {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid crimson;
+}
+
+.recommend-cocktail div {
+  display: flex;
+  flex-direction: column;
+}
+
+.recommend-recipe {
+  line-height: 22px;
+}
+
+.cocktail-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.recommend-thumbnail {
+  height: 250px;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-block: 2rem;
+  gap: 1rem;
+  background-color: rgb(194, 188, 180);
+}
+
+.side-menu button {
+  margin: 0.5rem;
+  color: #fafdff;
+  border: none;
+  background-color: rgb(194, 188, 180);
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -1px;
+  transition: 0.5s;
+}
+
+.side-menu button:hover {
+  color: rgb(54, 51, 51);
+  background-color: wheat;
+}
+
+.cocktail-board {
+  display: flex;
+  flex-direction: column;
+  padding-block: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  border: 1px solid #999188;
+  height: fit-content;
+  margin-right: 0.3rem;
+}
+
+.cocktail-thumbnail {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.cocktail-name {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-bottom: 1.5rem;
+  letter-spacing: -1.5px;
+  line-height: 22px;
+  border-bottom: 2px dotted #999188;
+}
+
+.recommend-info {
+  padding-left: 2rem;
+  height: 100%;
+  border-left: 2px dotted #999188;
+}
+
+.board-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.error-board {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 769px) {
+  .recommend-cocktail {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid crimson;
+  }
+
+  .recommend-thumbnail {
+    height: 200px;
+  }
+
+  .cocktail-thumbnail {
+    padding-top: 0.5rem;
+    width: 100%;
+    border-right: none;
+  }
+
+  .cocktail-name {
+    font-size: 20px;
+    border-bottom: 2px dotted #999188;
+    padding-bottom: 1rem;
+    letter-spacing: -1.5px;
+    line-height: 22px;
+  }
+
+  .recommend-info {
+    padding-left: 1rem;
+  }
+
+  .recommend-info h4 {
+    line-height: 22px;
+    font-size: 20px;
+  }
+  .recommend-info div {
+    line-height: 16px;
+    font-size: 14px;
+  }
+  .recommend-info p {
+    font-size: 12px;
+  }
+
+  .title {
+    line-height: 80px;
+  }
+
+  .title span {
+    font-size: 110px;
+  }
+
+  .side-menu {
+    padding-block: 1rem;
+  }
+
+  .side-menu button {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .recommend-cocktail {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid crimson;
+  }
+
+  .recommend-thumbnail {
+    height: 150px;
+  }
+
+  .cocktail-thumbnail {
+    padding-top: 0.5rem;
+    width: 100%;
+    border-right: none;
+  }
+
+  .cocktail-name {
+    font-size: 20px;
+    border-bottom: 2px dotted #999188;
+    padding-bottom: 1rem;
+    letter-spacing: -1.5px;
+    line-height: 22px;
+  }
+
+  .recommend-info {
+    padding-left: 1rem;
+  }
+
+  .recommend-info h4 {
+    line-height: 18px;
+    font-size: 16px;
+  }
+  .recommend-info div {
+    line-height: 14px;
+    font-size: 12px;
+  }
+  .recommend-info p {
+    font-size: 10px;
+  }
+
+  .title {
+    line-height: 75px;
+  }
+
+  .title span {
+    font-size: 90px;
+  }
+
+  .side-menu {
+    padding-block: 1rem;
+  }
+
+  .side-menu button {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+.modal-content{
+    background-color: #f0ede9;
+    border-radius: 0;
+    border: 10px ridge rgb(197, 197, 197);
+}
+
+.modal-header {
+    border-bottom:1px solid wheat;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-image{
+    width: 100%;
+    border-bottom: 2px dotted #999188;
+    margin-bottom: 1rem;
+    padding-bottom:1.5rem;
+}
+
+.modal-instructions{
+    font-size: 17px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-ingredient{
+    font-size: 17px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+
+#cocktail-Modal{
+    top: 50px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  --bs-pagination-bg: crimson;
+  --bs-pagination-color: #fffcfa;
+  --bs-pagination-border-color: #fffcfa;
+  --bs-pagination-border-radius: 0
+  --bs-pagination-hover-bg: #fffcfa;
+  --bs-pagination-hover-color: crimson;
+  --bs-pagination-hover-border-color: crimson;
+  --bs-pagination-focus-bg: #fffcfa;
+  --bs-pagination-focus-color: crimson;
+  --bs-pagination-focus-border-color: crimson;
+  --bs-pagination-active-bg: #fffcfa;
+  --bs-pagination-active-color: crimson;
+  --bs-pagination-active-border-color: crimson;
+}
