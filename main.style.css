@@ -112,6 +112,8 @@ body {
 }
 
 .recommend-thumbnail {
+    margin-block: 1rem;
+    margin-left: 1rem;
   height: 250px;
   align-items: center;
 }
@@ -196,8 +198,10 @@ body {
   }
 
   .recommend-thumbnail {
-    height: 200px;
-  }
+    margin-block: 0;
+    margin-left: 0;
+
+}
 
   .cocktail-thumbnail {
     padding-top: 0.5rem;
