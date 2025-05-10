@@ -1,7 +1,8 @@
 # JavaScript Project 'Sip Pick'
 
-### **[Sip Pick 바로가기~]([https://sip-pick-jihyoungs-projects.vercel.app/](https://sip-pick.vercel.app/))![sipPick](https://em-content.zobj.net/source/serenityos/392/tropical-drink_1f379.png)**
-
+![sipPick](https://em-content.zobj.net/source/serenityos/392/tropical-drink_1f379.png)
+ [Sip Pick 바로가기~](https://sip-pick.vercel.app/)  
+ 
 
 <br>
 
